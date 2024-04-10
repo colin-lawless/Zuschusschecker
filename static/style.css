@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    height: 100%;
+    position: relative;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    box-sizing: border-box;
+    padding-bottom: 70px; 
+    flex-direction: column;
+}
+
+#selection-container {
+    display: none;
+    margin-top: 20px;
+}
+
+button, .btn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 20px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.option-button:hover, .btn-primary:hover {
+    color: #fff;
+    background-color: green;
+    border-color: green;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.form-row, .form-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+input[type="text"], input[type="email"], input[type="number"], input[type="tel"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.container h2 {
+    text-align: center; 
+    margin-top: 0;
+    padding: 20px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.social-icons {
+    font-size: 24px;
+}
+
+.icon-link {
+    color: #fff;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-link:hover {
+    transform: translateY(-3px);
+}
+
+.icon-link i {
+    transition: color 0.3s ease-in-out;
+}
+
+.icon-link:hover i {
+    color: #00aced;
+}
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 9999;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db; /* Blue for consistency */
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.pricing-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.pricing-container h1 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.pricing-card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-card h2 {
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+main-header {
+    background-color: #333; /* Example color */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.main-header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+/* Section styles */
+section {
+    margin: 2em 0;
+    padding: 1em;
+    background-color: #fff; /* Stand out from the body background */
+}
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #000; /* For better contrast */
+}
+
+/* If the hero section needs additional specific styling */
+.hero h1 {
+    font-size: 2.5rem; /* Example size, adjust as needed */
+    font-weight: 700; /* Adjust weight as needed */
+    margin-bottom: 1em;
+}
+
+.hero p {
+    font-size: 1.2rem; /* Example size, adjust as needed */
+    max-width: 600px; /* Prevents the text from becoming too wide */
+    margin: 0 auto; /* Centers the text block if it's less than the max width */
+}
+@media (max-width: 768px) {
+    main {
+        padding-bottom: 20px;
+    }
+
+    .hero {
+        padding: 3em 1em;
+    }
+}

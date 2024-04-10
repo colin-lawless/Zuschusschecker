@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block title %}Preise - Zuschusschecker{% endblock %}
+
+{% block content %}
+<div class="pricing-container">
+    <h1>Preisübersicht</h1>
+    <div class="row">
+        <!-- Free Consultation Column -->
+        <div class="col-md-6 pricing-card">
+            <h2>Kostenlose Beratung</h2>
+            <p>Erhalten Sie persönlich zugeschnittene Beratungen auf nationaler und Bundesland-Ebene ohne zusätzliche Kosten.</p>
+            <ul class="features-list">
+                <li>Persönlich zugeschnittene Beratung</li>
+                <li>Einfache und intuitive Bedienung</li>
+                <li>Aktuelle Informationen</li>
+                <li>Expertenunterstützung</li>
+                <li>Nachhaltige Lösungen</li>
+            </ul>
+            <a href="/formular" class="btn btn-success">Jetzt starten</a>
+        </div>
+        
+        <!-- Paid Consultation Column -->
+        <div class="col-md-6 pricing-card">
+            <h2>Bezahlte lokale Beratung</h2>
+            <p>Für individuelle Beratungen auf lokaler Ebene bieten wir einen Premium-Service gegen eine Gebühr an.</p>
+            <ul class="features-list">
+                <li>Alle Leistungen der kostenlosen Beratung</li>
+                <li>Zusätzliche lokale Zuschussberatung</li>
+            </ul>
+            <a href="/formular" class="btn btn-primary">Anfrage senden</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
